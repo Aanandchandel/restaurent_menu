@@ -1,139 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Mike</title>
-<link rel="stylesheet" href="./index.css">
-<link rel="icon" href="https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FLnBSbfAO9SRqVaGhkdBo0JlZgSUORb0C4ECvfRLkvyJsVkSpJ75Xo5akOjlh-0QhrA1HblZ6xP1E6RaV4AbsZZ8jSB5~FcmvPZf82iYmVHkm-o-YSuLrksLlUZFQUO9TCHh81G0UoNA~L6vzQAVNGRSfGDEHr0MVYqH55K2derPbY~SUyvJcoH9wTGRb34mCW9e6rnC4Cv5zRecDSQklr8Gej5xaginFQ3HFtUa82d2WjIYsC-ONofZKpNsRaSB1Pg5LpZxK6xAyiYurukI5RNKdZ3omiVs8SbtnjSgFEzsC3sXtO6DcEV~uqLr8Nx5aLbPhs5QVaOsBSUOS1ddNQ__">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <title>New Recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header  id="header">
-        <div id="img"></div>
-        <div id="routers">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-            <div id="profile"></div>
+
+    <!--------------------- Main-Section ---------------------->
+    <section class="main-container">
+
+        <!---------------- Navbar-section ------------------------->
+        <section class="navbar flex">
+            <div class="navbar-first flex">
+                <div class="navbar-section">
+                    <img class="logo" src="./images/logo.jpg" alt="">
+                </div>
+                <div class="navbar-center flex">
+                    <div class="navbar-home">Home</div>
+                    <div class="navbar-Explore">Explore </div>
+                    <div class="navbar-Help">Help</div>
+                </div>
+            </div>
+
+            <div class="navbar-second ">
+                <div><img class="photo-image" src="./images/photo.jpg" alt=""></div>
+            </div>
+
+        </section>
+    </section>
+
+    <!------------------ image-section ----------------->
+    <section class="Image-section">
+        <div class="above-image-text ">
+            <div class="trending">Trending now</div>
+            <div class="famous">Mike’s famous salad
+                with cheese</div>
+            <div class="name"> By John Mike</div>
         </div>
-    </header>
-<main >
-<div id="intro"  >
-    <div>
-        <div>
-            <h4>Trending Now</h4>
-            <h1>Mike's famous salad with cheese</h1>
-            <h4>By John Mike</h4>
+        <div class="input-container">
+            <div class="search-name">Search For Recipes</div>
+            <div>
+                <i class="fa-brands fa-sistrix search-icon" style="color: #f1dddd;"></i>
+                <input class="search-input" type="search" placeholder="Search For Recipes">
+            </div>
+    </section>
+
+    <!-- Button-section -->
+    <section>
+        <div class="button">
+            <div><button class="btn1">All Recipes </button>
+                <div><i class="fa-solid fa-chevron-right first"></i></div>
+            </div>
+            <div><button class="btn2">Veg Recipe only </button>
+                <div><i class="fa-solid fa-chevron-right second"></i></div>
+
+            </div>
+            <div><button class="btn3">Non Veg Recipe only</button>
+                <div><i class="fa-solid fa-chevron-right third"></i></div>
+            </div>
         </div>
-        </div>
-</div>
-<div id="searchbarr">
-    <h3>Search For Recipes</h3>
-    <div>
-        <div>
-            <img  src="./indeximg/search.png" alt="icon">     
-            <input value="" id="searchBarrInpt" type="text" placeholder="Search for recipies">
-       
-        </div>
-        <img id="searchButton" src="./indeximg/searchbutton.png"  alt="icon" id="seachicon2">
-    </div>
-    <div id="foodtype">
-        <div id="allitem" ><span>All Recipes</span><img style="background-color: inherit; height: 2rem;" src="./indeximg/view-more.png" alt=""></div>
-        <div id="veg"><span>Veg Recipes Only</span><img style="background-color: inherit; height: 2rem;" src="./indeximg/view-more.png" alt=""></div>
-        <div id="nonveg"><span>Non Veg Recipes</span><img style="background-color: inherit; height: 2rem;" src="./indeximg/view-more.png" alt=""></div>
-    </div>
-</div>
-<div id="recipies">
-    <div>
+    </section>
 
-        <span>Filters</span>
-        <span>Ratting</span>
-        <div>
-            <input id="foremore" type="checkbox" name="filter">
-            <label for="" >4 and above</label>
-        </div>
-        <div>
-            <input id="bellowFore" type="checkbox" name="filter"><label for="Below 4"></label>
-            <label for="">Below 4</label>
+
+    <!-- FILTER AND IMAGE SECTION -->
+    <section>
+        <div class="image-container">
+            <div class="filter">
+                <div class="file">Filter</div>
+                <div class="ration">
+                    <div class="rate">Rating</div>
+                    <div><label class="container">4 and Above
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label></div>
+                    <div><label class="container">Belove 4
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label></div>
+
+                </div>
+            </div>
+
+            <div class="Card1" id="Card1">
+
+            </div>
 
         </div>
-        
-
-    
-    </div>
-
-     <div id="items">
+    </section>
 
 
-        
-    
-    </div>
-
-
-</div>
-</main>
-<footer id="footer">
-    <div>
-        <img src="https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FLnBSbfAO9SRqVaGhkdBo0JlZgSUORb0C4ECvfRLkvyJsVkSpJ75Xo5akOjlh-0QhrA1HblZ6xP1E6RaV4AbsZZ8jSB5~FcmvPZf82iYmVHkm-o-YSuLrksLlUZFQUO9TCHh81G0UoNA~L6vzQAVNGRSfGDEHr0MVYqH55K2derPbY~SUyvJcoH9wTGRb34mCW9e6rnC4Cv5zRecDSQklr8Gej5xaginFQ3HFtUa82d2WjIYsC-ONofZKpNsRaSB1Pg5LpZxK6xAyiYurukI5RNKdZ3omiVs8SbtnjSgFEzsC3sXtO6DcEV~uqLr8Nx5aLbPhs5QVaOsBSUOS1ddNQ__" alt="logo">
-        <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
-    </div>
-    <div>
-        <h1>Company</h1>
-        
-        <div>
-            <a href="#" class="footeroptions">Home</a>
-            <a href="#" class="footeroptions">Explore</a>
-            <a href="#" class="footeroptions">Team</a>
-            <a href="#" class="footeroptions">About Us</a>
-            <a href="#" class="footeroptions">Activity</a>
+    <!-------------- FOOTER ------------->
+    <section>
+        <div class="fotter">
+            <div class="logo2">
+                <img class="image-logo2" src="./images/logo.jpg" alt="">
+                <p class="logopara">Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use
+                    search function. Join our community and let's cook together!</p>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <div>home</div>
+                <div>Explore</div>
+                <div>Team</div>
+                <div>Abnout us</div>
+                <div>Activity</div>
+            </div>
+            <div class="resource">
+                <h2>Resources</h2>
+                <div>Blog</div>
+                <div>Use Cases</div>
+                <div>Testimonials</div>
+                <div>Insights</div>
+            </div>
+            <div class="subscribe-section">
+                <div><img class="image-logo2" src="./images/logo.jpg" alt=""></div>
+                <div>
+                    <p class="subscrube-para">Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+                        aliquam.</p>
+                </div>
+                <div class="input-button">
+                    <input class="input-last" type="email" placeholder="Your Email">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <div class="adtherade">@</div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div>
-        <h1>Resources</h1>
-        <a href="">Blog</a>
-        <a href="">Use cases</a>
-        <a href="">Testimonials</a>
-        <a href="">Insights</a>
-    </div>
-    <div>
-        <img src="https://s3-alpha-sig.figma.com/img/e0ef/4f61/967cc7d034dc411ca2013fff2fed228d?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FLnBSbfAO9SRqVaGhkdBo0JlZgSUORb0C4ECvfRLkvyJsVkSpJ75Xo5akOjlh-0QhrA1HblZ6xP1E6RaV4AbsZZ8jSB5~FcmvPZf82iYmVHkm-o-YSuLrksLlUZFQUO9TCHh81G0UoNA~L6vzQAVNGRSfGDEHr0MVYqH55K2derPbY~SUyvJcoH9wTGRb34mCW9e6rnC4Cv5zRecDSQklr8Gej5xaginFQ3HFtUa82d2WjIYsC-ONofZKpNsRaSB1Pg5LpZxK6xAyiYurukI5RNKdZ3omiVs8SbtnjSgFEzsC3sXtO6DcEV~uqLr8Nx5aLbPhs5QVaOsBSUOS1ddNQ__" alt="icon">
-        <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
-        <div>
-            <input type="email" placeholder="Your Email">
-            <button >subscribe</button>
+    </section>
+
+    <!------- to Profile section ------>
+    <section>
+        <div class="profile">
+            <div> <a href="https://www.instagram.com/mr.devilalpanchal/"    ><i class="fa-brands fa-square-instagram "></i></a> </div>
+            <div> <a href="https://twitter.com/DevilalPanchal7"><i class="fa-brands fa-square-twitter"></i></a></div>
+            <div> <a href="https://www.linkedin.com/in/devilalpanchal/"> <i class="fa-brands fa-linkedin"></i></a> </div>
+            <div> <a href="https://www.facebook.com/videos?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%7C&placement=&creative=550525804791&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-592856129%26loc_physical_ms%3D9152349%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=CjwKCAiA0PuuBhBsEiwAS7fsNe6WOKLTatQfnX2yFTJa2mEy61CLWKmevecrJvjOK-GbIXo1tI-uWRoCkoQQAvD_BwE"><i class="fa-brands fa-facebook"></i></a> </div>
         </div>
+    </section>
+
+    <div class="coded">
+        <a href="">Coded by</a> ..
+        <a href="https://github.com/devilalpanchal">Devid Panchal</a>
     </div>
 
-</footer>
-<div id="contect-link">
-    <img src="" alt="insta">
-    <img src="" alt="x">
-    <img src="" alt="linkdin">
-    <img src="" alt="facebook">
-</div>
-
-    <script src="index.js"></script>
+    <!-- to add functionality -->
+    <script src="script.js"></script>
 </body>
-</html> 
 
-<!-- 
-<div class="item">
-    <img class="itemsimg" src="./indeximg/item.jpeg" alt="">
-    <span class="type">
-        veg
-    </span>
-    <h1>nameoffood</h1>
-    <div >
-        <span>ddd</span>
-        <div class="responce">
-            <img src="./indeximg/dislike.png" alt="dislike" >
-            <img src="./indeximg/like.jpg" alt="like" style="display: none;">
-            <img src="./indeximg/comment.png" alt="comment">
-        </div>
-    </div>
-</div> -->
+</html>
